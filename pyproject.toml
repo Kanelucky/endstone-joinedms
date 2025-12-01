@@ -1,0 +1,12 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "endstone-joinedms"
+version = "0.1.0"
+author = "Kanelucky"
+description = "Replaces the default join and quit messages with [+] Player and [-] Player."
+
+[project.entry-points."endstone"]
+joinedms = "endstone_joinedms:Joinedms"
